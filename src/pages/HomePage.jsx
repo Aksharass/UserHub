@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom"
 export default function HomePage() {
   const navigate = useNavigate()
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-white to-gray-600">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-white to-gray-600">
       <h1 className="text-3xl font-bold mb-6">Welcome to the Dashboard</h1>
       <p className="mb-8 text-lg text-gray-700 max-w-xl text-center">
         This dashboard helps you manage and visualize your data efficiently. Use the buttons below to navigate to different sections of the application.
