@@ -1,12 +1,42 @@
-# React + Vite
+# UserHub – React + Vite + Tailwind CSS CRUD UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple 4-page React + Vite application using Tailwind CSS for styling. It demonstrates basic UI routing, user authentication (mocked), data display from an external API, and CRUD operations for user data.
 
-Currently, two official plugins are available:
+## 🔧 Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** (with Vite)
+- **Tailwind CSS**
+- **React Router DOM**
+- **Axios**
+- **Dummy JSON API** ([https://dummyjson.com/users](https://dummyjson.com/users))
 
-## Expanding the ESLint configuration
+## 📄 Pages
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Authentication Page
+- Simple login screen with username & password (mock).
+- Only allows login with:
+  - **Username**: `admin`
+  - **Password**: `admin123`
+
+### 2. Home Page
+- Navigation bar with 2 links:
+  - View Data
+  - Input Data (CRUD)
+
+### 3. Display Data Page
+- Fetches and displays users from `https://dummyjson.com/users`.
+- Shows:
+  - User's full name
+  - Email
+  - Profile image
+
+### 4. Input Data (CRUD) Page
+- Add, edit, and delete user entries.
+- Locally managed state (no backend persistence).
+- Allows editing names, emails, and more.
+
+## 🏁 Getting Started
+
+### Install Dependencies
+
+ - npm install
