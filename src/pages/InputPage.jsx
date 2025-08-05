@@ -30,7 +30,7 @@ export default function InputPage() {
   }
 
   return (
-    <div className="p-6 bg-gray-50 min-h-screen">
+    <div className="p-6 bg-gradient-to-r from-white to-gray-500 min-h-screen">
       <h2 className="text-2xl font-bold mb-4">CRUD User Form</h2>
       <div className="bg-white p-4 rounded shadow-md mb-6">
         <input className="border p-2 mr-2" placeholder="Name" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} />

@@ -15,7 +15,7 @@ export default function UserDetail() {
   if (!user) return <div className="p-6">Loading...</div>
 
   return (
-    <div className="p-6 bg-gray-50 min-h-screen">
+    <div className="p-6 bg-gradient-to-r from-white to-gray-500 min-h-screen">
       <h2 className="text-2xl font-bold mb-4">User Detail</h2>
       <div className="bg-white p-4 rounded shadow-md">
         <img src={user.image} alt={user.firstName} className="w-48 h-48 object-cover rounded mb-4" />
